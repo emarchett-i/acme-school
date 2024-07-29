@@ -24,9 +24,7 @@ namespace Acme.School.Application.Courses.Handlers
                 request.StartDate, 
                 request.EndDate);
 
-            await _courseRepository.Add(
-                course, 
-                cancellationToken);
+            await _courseRepository.Add(course, cancellationToken);
         }
     }
 }

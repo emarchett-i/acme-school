@@ -40,20 +40,31 @@ namespace Acme.School.Application.Enrollments.Handlers
 
             var enrollment = new Enrollment(student, course);
 
-            if (course.RegistrationFee > 0)
-            {
-                bool paymentSuccessful = await _paymentGateway.ProcessPayment(student, course.RegistrationFee);
-                if (!paymentSuccessful)
-                {
-                    throw new PaymentFailedException(request.StudentId);
-                }
+            await PerformPaymentIfApplicable(
+                student, 
+                course, 
+                enrollment);
 
-                enrollment.CompletePayment();
+            await _enrollmentRepository.Add(enrollment, cancellationToken);
+        }
+
+        private async Task PerformPaymentIfApplicable(
+            Student student, 
+            Course course, 
+            Enrollment enrollment)
+        {
+            if (course.RegistrationFee <= 0)
+            {
+                return;
             }
 
-            await _enrollmentRepository.Add(
-                enrollment, 
-                cancellationToken);
+            bool paymentSuccessful = await _paymentGateway.ProcessPayment(student, course.RegistrationFee);
+            if (!paymentSuccessful)
+            {
+                throw new PaymentFailedException(student.Id, course.RegistrationFee);
+            }
+
+            enrollment.CompletePayment();
         }
     }
 }

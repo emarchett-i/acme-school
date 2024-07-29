@@ -19,6 +19,7 @@ namespace Acme.School.Application.Students.Handlers
             CancellationToken cancellationToken)
         {
             var student = new Student(request.Name, request.Age);
+
             await _studentRepository.Add(student, cancellationToken);
         }
     }

@@ -4,6 +4,7 @@ namespace Acme.School.Domain.Entities
 {
     public class Enrollment
     {
+        public int Id { get; set; }
         public Student Student { get; private set; }
         public Course Course { get; private set; }
         public DateTime EnrollmentDate { get; private set; }
@@ -17,6 +18,8 @@ namespace Acme.School.Domain.Entities
             Course = course;
             EnrollmentDate = DateTime.Now;
             IsPaymentComplete = false;
+
+            Validate();
         }
 
         private void Validate()

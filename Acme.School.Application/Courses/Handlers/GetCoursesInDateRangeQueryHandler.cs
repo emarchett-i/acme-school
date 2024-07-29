@@ -1,6 +1,7 @@
 ﻿using Acme.School.Application.Courses.DTOs;
 using Acme.School.Application.Courses.Queries;
 using Acme.School.Application.Students.DTOs;
+using Acme.School.Domain.Entities;
 using Acme.School.Domain.Interfaces;
 using MediatR;
 
@@ -19,9 +20,9 @@ namespace Acme.School.Application.Courses.Handlers
             GetCoursesInDateRangeQuery request, 
             CancellationToken cancellationToken)
         {
-            var courses = await _courseRepository.GetCoursesInDateRange(request.StartDate, request.EndDate);
+            IEnumerable<Course> courses = await _courseRepository.GetCoursesInDateRange(request.StartDate, request.EndDate);
 
-            var courseDTOs = courses.Select(course => new CourseDto
+            List<CourseDto> courseDTOs = courses.Select(course => new CourseDto
             {
                 Name = course.Name,
                 RegistrationFee = course.RegistrationFee,

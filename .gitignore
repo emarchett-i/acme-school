@@ -11,3 +11,5 @@
 /Acme.School.Persistence/obj
 /Acme.School.Application.Tests/obj
 /Acme.School.Domain.Tests/obj
+/Acme.School.Application.Tests/bin/Debug/net8.0
+/Acme.School.Domain.Tests/bin/Debug/net8.0

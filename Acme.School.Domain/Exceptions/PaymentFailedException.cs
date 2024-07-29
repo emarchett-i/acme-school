@@ -2,6 +2,6 @@
 {
     public class PaymentFailedException : Exception
     {
-        public PaymentFailedException(int studentId) : base($"The payment for the student <{studentId}> have failed") { }
+        public PaymentFailedException(int studentId, decimal fee) : base($"The payment of fee <{fee}> for the student <{studentId}> have failed") { }
     }
 }
