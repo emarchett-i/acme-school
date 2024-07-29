@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Acme.School.Application/bin/Debug/net8.0
+/Acme.School.Application/obj
+/Acme.School.Domain/bin/Debug/net8.0
+/Acme.School.Domain/obj
+/Acme.School.Persistence/bin/Debug/net8.0
+/Acme.School.Persistence/obj
