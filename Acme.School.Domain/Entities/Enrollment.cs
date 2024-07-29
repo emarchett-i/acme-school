@@ -5,10 +5,12 @@ namespace Acme.School.Domain.Entities
     public class Enrollment
     {
         public int Id { get; set; }
-        public Student Student { get; private set; }
-        public Course Course { get; private set; }
-        public DateTime EnrollmentDate { get; private set; }
-        public bool IsPaymentComplete { get; private set; }
+        public Student Student { get; set; }
+        public Course Course { get; set; }
+        public DateTime EnrollmentDate { get; set; }
+        public bool IsPaymentComplete { get; set; }
+
+        public Enrollment() { }
 
         public Enrollment(
             Student student, 

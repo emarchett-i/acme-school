@@ -25,4 +25,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Acme.School.Application\Acme.School.Application.csproj" />
+    <ProjectReference Include="..\Acme.School.Tests.Utilities\Acme.School.Tests.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

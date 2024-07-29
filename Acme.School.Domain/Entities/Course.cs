@@ -5,11 +5,13 @@ namespace Acme.School.Domain.Entities
     public class Course
     {
         public int Id { get; set; }
-        public string Name { get; private set; }
-        public decimal RegistrationFee { get; private set; }
-        public DateTime StartDate { get; private set; }
-        public DateTime EndDate { get; private set; }
-        public List<Enrollment> Enrollments { get; private set; }
+        public string Name { get; set; }
+        public decimal RegistrationFee { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public List<Enrollment> Enrollments { get; set; }
+
+        public Course() { }
 
         public Course(
             string name, 

@@ -13,3 +13,6 @@
 /Acme.School.Domain.Tests/obj
 /Acme.School.Application.Tests/bin/Debug/net8.0
 /Acme.School.Domain.Tests/bin/Debug/net8.0
+/Acme.School.Application.Tests/bin/Release/net8.0
+/Acme.School.Tests.Utilities/bin/Debug/net8.0
+/Acme.School.Tests.Utilities/obj
