@@ -11,21 +11,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CA4EA1B0-0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6483AE69-C29E-4A4B-9EE9-A30DF28DB227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.School.Domain", "Acme.School.Domain\Acme.School.Domain.csproj", "{3F2C8839-550C-48FA-81EA-060EB9932809}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.School.Domain", "Acme.School.Domain\Acme.School.Domain.csproj", "{3F2C8839-550C-48FA-81EA-060EB9932809}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.School.Application", "Acme.School.Application\Acme.School.Application.csproj", "{186CD597-C0E2-441C-91C1-F89FFF451E90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.School.Application", "Acme.School.Application\Acme.School.Application.csproj", "{186CD597-C0E2-441C-91C1-F89FFF451E90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.School.Persistence", "Acme.School.Persistence\Acme.School.Persistence.csproj", "{849856B3-D5FE-4C31-95B9-E3CC811CCAE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.School.Persistence", "Acme.School.Persistence\Acme.School.Persistence.csproj", "{849856B3-D5FE-4C31-95B9-E3CC811CCAE1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{1B9045AE-0DDF-4907-90D7-525CFE9BDD1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.School.Application.Tests", "Acme.School.Application.Tests\Acme.School.Application.Tests.csproj", "{FC896B46-FC6B-423E-AE5F-F50858121069}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.School.Application.Tests", "Acme.School.Application.Tests\Acme.School.Application.Tests.csproj", "{FC896B46-FC6B-423E-AE5F-F50858121069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.School.Domain.Tests", "Acme.School.Domain.Tests\Acme.School.Domain.Tests.csproj", "{7239FEB0-7E9D-4DDA-A8DE-74E8B31FFA22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.School.Domain.Tests", "Acme.School.Domain.Tests\Acme.School.Domain.Tests.csproj", "{7239FEB0-7E9D-4DDA-A8DE-74E8B31FFA22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{EA09A6AB-D55A-4B69-BFB5-B0C33FFF2450}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.School.Tests.Utilities", "Acme.School.Tests.Utilities\Acme.School.Tests.Utilities.csproj", "{45DACAC1-B2B2-4401-9E53-8BBEFD5CCBF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.School.Tests.Utilities", "Acme.School.Tests.Utilities\Acme.School.Tests.Utilities.csproj", "{45DACAC1-B2B2-4401-9E53-8BBEFD5CCBF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{37523288-EA88-4479-8CC0-757472E93F25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3DE6B9BB-1671-4430-B66E-1C55F14769C4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +79,7 @@ Global
 		{7239FEB0-7E9D-4DDA-A8DE-74E8B31FFA22} = {1B9045AE-0DDF-4907-90D7-525CFE9BDD1D}
 		{EA09A6AB-D55A-4B69-BFB5-B0C33FFF2450} = {50A04F28-CF63-4AFF-9132-49AD181875B9}
 		{45DACAC1-B2B2-4401-9E53-8BBEFD5CCBF3} = {EA09A6AB-D55A-4B69-BFB5-B0C33FFF2450}
+		{37523288-EA88-4479-8CC0-757472E93F25} = {50A04F28-CF63-4AFF-9132-49AD181875B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3032C0AE-21EA-467D-99C0-7F7FFAE4A1DE}
