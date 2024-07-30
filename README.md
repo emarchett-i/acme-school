@@ -18,7 +18,7 @@ The abstractions lives in the Domain layer (Repositories and external services)
 
 **Infrastructure**
 
-Is not fully implemented, it's just to demonstrate that the actual implementation details will live there so the Core knows nothing about it's details and is not coupled to any technology such as EntityFramework, Dapper, etc
+It's not fully implemented, it's just to demonstrate that the actual implementation details will live there so the Core knows nothing about it's details and is not coupled to any technology such as EntityFramework, Dapper, etc
 
 **Key technologies and libraries used**
 - MediatR (for Mediator pattern)
@@ -34,11 +34,11 @@ Is not fully implemented, it's just to demonstrate that the actual implementatio
 
 **What things did you do but you think could be improved or would be 
 necessary to return to them if the project goes ahead**
-- Probably the way validations and verifications are handled, to not use a lot of custom exception so we use a Result-oriented approach with the list of errors)
+- Probably the way validations and verifications are handled, to not use a lot of custom exceptions, and we use a Result-oriented approach with the list of errors
 
 **Time invested**
 I have invested 2 days to do this project (about 12hs)
 
 **What things you have had to research and what things were new to you**
 During this days I have researched about the Result pattern which I think it is a better choice to handle errors instead of having many custom exceptions.
-The rest of concepts-libraries are not new to me, it's how I like to organize things (except for the Mediator pattern, I know it and I used personally but not professionally)
+The rest of concepts/libraries are not new to me, it's how I like to organize things (except for the Mediator pattern, I know it and I used it personally but not professionally)
