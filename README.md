@@ -41,4 +41,4 @@ I have invested 2 days to do this project (about 12hs)
 
 **What things you have had to research and what things were new to you**
 During this days I have researched about the Result pattern which I think it is a better choice to handle errors instead of having many custom exceptions.
-The rest of concepts/libraries are not new to me, it's how I like to organize things (except for the Mediator pattern, I know it and I used personally but not professionally)
+The rest of concepts/libraries are not new to me, it's how I like to organize things (except for the Mediator pattern, I know it and I used it personally but not professionally)
