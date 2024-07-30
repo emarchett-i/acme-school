@@ -18,7 +18,7 @@ The abstractions lives in the Domain layer (Repositories and external services)
 
 **Infrastructure**
 
-Is not fully implemented, it's just to demonstrate that the actual implementation details will live there so the Core knows nothing about it's details and is not coupled to any technology such as EntityFramework, Dapper, etc
+It's not fully implemented, it's just to demonstrate that the actual implementation details will live there so the Core knows nothing about it's details and is not coupled to any technology such as EntityFramework, Dapper, etc
 
 **Key technologies and libraries used**
 - MediatR (for Mediator pattern)
