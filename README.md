@@ -14,7 +14,7 @@ This is a .NET 8 PoC project to demonstrate important development concepts like 
 
 For the Application layer I have used Mediator pattern with the MediatR library, so every use case is well organized in commands/queries, I didn't wanted to overkill the project with the full CQRS pattern on data access side, but normally this goes with proper CQRS pattern with CommandRepositories and QueryRepositories.
 
-The abstractions live in the Domain layer (Repositories and external services)
+The abstractions lives in the Domain layer (Repositories and external services)
 
 **Infrastructure**
 
