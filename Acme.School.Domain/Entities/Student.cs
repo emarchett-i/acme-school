@@ -20,6 +20,11 @@ namespace Acme.School.Domain.Entities
 
         private void Validate()
         {
+            if (string.IsNullOrWhiteSpace(Name))
+            {
+                throw new DomainException("Student name cannot be empty or whitespace");
+            }
+
             if (Age < 18)
             {
                 throw new DomainException("Student should be at least 18");
